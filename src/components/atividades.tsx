@@ -15,11 +15,7 @@ function CardAtividade(props: PropsCardAtividade) {
   return (
     <Card className="w-[335px]">
       <CardHeader>
-        <img
-          src={props.imagem}
-          alt=""
-          className="rounded-md mb-4 h-[160px] co"
-        />
+        <img src={props.imagem} alt="" className="rounded-md mb-4 h-[160px]" />
         <CardTitle className="text-center">{props.titulo}</CardTitle>
       </CardHeader>
       <CardContent>

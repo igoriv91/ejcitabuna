@@ -74,14 +74,20 @@ module.exports = {
           "20%": { transform: "scale(1.01)" },
           "30%": { transform: "scale(1.05)" },
         },
+        float: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         coracao: "coracao 3s infinite",
+        float: "float 5s infinite",
       },
       backgroundImage: {
         papel: "url('src/assets/bg1.png')",
+        identidade: "url('src/assets/identidade.png')",
       },
     },
   },
