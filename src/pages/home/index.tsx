@@ -1,7 +1,11 @@
-import { Banner } from "@/components/banner";
-import { Cabecalho } from "../../components";
-import { Atividades } from "@/components/atividades";
-import Identidade from "@/components/identidade";
+import {
+  Cabecalho,
+  Banner,
+  Atividades,
+  Identidade,
+  RedesSociais,
+  Galeria,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -10,6 +14,8 @@ export default function Home() {
       <Banner />
       <Atividades />
       <Identidade />
+      <RedesSociais />
+      <Galeria />
     </>
   );
 }

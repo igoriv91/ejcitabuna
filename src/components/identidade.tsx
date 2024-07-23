@@ -4,6 +4,7 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { FaCross } from "react-icons/fa";
 import { FaLeaf } from "react-icons/fa";
+import { Titulo } from ".";
 
 interface PropsCardIdentidade {
   icon: ReactElement;
@@ -33,7 +34,7 @@ function CadIdentidade(props: PropsCardIdentidade) {
   );
 }
 
-export default function Identidade() {
+export function Identidade() {
   return (
     <div className="flex items-center justify-center ">
       <div className="w-full m-20 max-w-[1366px] min-[1300px]:flex gap-16">
@@ -48,12 +49,10 @@ export default function Identidade() {
         </div>
         <div className="mb-8">
           <div className="mb-8">
-            <p className="text-red-600 font-bold text-lg text-center">
-              Identidade
-            </p>
-            <p className="text-5xl font-bold my-2 mb-4 text-center">
-              Jesus é louco de amor por você
-            </p>
+            <Titulo
+              tituloVermelho="Identidade"
+              tituloGrande="Jesus é louco de amor por você"
+            />
             <p className="text-center text-slate-600">
               Buscamos dentro da realidade paroquial conduzir, através de
               encontros, partilhas, formações e orações, os jovens à revelação

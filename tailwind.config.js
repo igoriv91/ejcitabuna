@@ -86,8 +86,8 @@ module.exports = {
         float: "float 5s infinite",
       },
       backgroundImage: {
-        papel: "url('src/assets/bg1.png')",
-        identidade: "url('src/assets/identidade.png')",
+        papel: "url('assets/bg1.png')",
+        identidade: "url('assets/identidade.png')",
       },
     },
   },

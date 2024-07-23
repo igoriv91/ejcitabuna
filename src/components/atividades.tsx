@@ -4,6 +4,7 @@ import evangelizar from "/src/assets/evangelizar.png";
 import perserveranca from "/src/assets/perseveranca.png";
 import engajamento from "/src/assets/engajamento.png";
 import essencia from "/src/assets/essencia.png";
+import { Titulo } from ".";
 
 interface PropsCardAtividade {
   imagem: string;
@@ -27,12 +28,12 @@ function CardAtividade(props: PropsCardAtividade) {
 
 export function Atividades() {
   return (
-    <div className="flex items-center justify-center bg-slate-50 ">
+    <div className="flex items-center justify-center bg-slate-100 ">
       <div className="w-full m-20 max-w-[1366px]">
-        <div className="text-center mb-8">
-          <p className="text-red-600 font-bold text-lg ">Nossos Objetivos</p>
-          <p className="text-5xl font-bold my-2">Jovens Evangelizando Jovens</p>
-        </div>
+        <Titulo
+          tituloVermelho="Nossos Objetivos"
+          tituloGrande="Jovens evangelizando jovens"
+        />
         <div className="flex gap-8 flex-wrap justify-center">
           <CardAtividade
             imagem={encontro}
