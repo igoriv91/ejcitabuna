@@ -37,10 +37,10 @@ function CadIdentidade(props: PropsCardIdentidade) {
 export function Identidade() {
   return (
     <div className="flex items-center justify-center ">
-      <div className="w-full m-20 max-w-[1366px] min-[1300px]:flex gap-16">
-        <div className="mb-8 w-[550px] ml-auto mr-auto">
-          <div className="bg-identidade bg-cover h-[500px] w-[500px] rounded-3xl z-10 relative"></div>
-          <div className="border-2 border-red-600 rounded-3xl h-[500px] w-[500px] relative -mt-[450px] ml-[50px] "></div>
+      <div className="w-full min-[1300px]:m-20 m-5 max-w-[1366px] min-[1300px]:flex gap-16">
+        <div className="mb-8  min-[1300px]:w-[550px] w-[330px] ml-auto mr-auto">
+          <div className="bg-identidade bg-cover min-[1300px]:h-[500px] h-[300px] min-[1300px]:w-[500px] w-[300px] rounded-3xl z-10 relative"></div>
+          <div className="border-2 border-red-600 rounded-3xl min-[1300px]:h-[500px] h-[300px] min-[1300px]:w-[500px] w-[300px] relative -mt-[270px] ml-[30px] "></div>
           <img
             src={logo}
             alt="logo"
