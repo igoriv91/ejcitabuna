@@ -5,6 +5,7 @@ import { IconContext } from "react-icons";
 import { FaCross } from "react-icons/fa";
 import { FaLeaf } from "react-icons/fa";
 import { Titulo } from ".";
+import { cn } from "@/lib/utils";
 
 interface PropsCardIdentidade {
   icon: ReactElement;
@@ -38,13 +39,35 @@ export function Identidade() {
   return (
     <div className="flex items-center justify-center ">
       <div className="w-full min-[1300px]:m-20 m-5 max-w-[1366px] min-[1300px]:flex gap-16">
-        <div className="mb-8  min-[1300px]:w-[550px] w-[330px] ml-auto mr-auto">
-          <div className="bg-identidade bg-cover min-[1300px]:h-[500px] h-[300px] min-[1300px]:w-[500px] w-[300px] rounded-3xl z-10 relative"></div>
-          <div className="border-2 border-red-600 rounded-3xl min-[1300px]:h-[500px] h-[300px] min-[1300px]:w-[500px] w-[300px] relative -mt-[270px] ml-[30px] "></div>
+        <div
+          className={cn(
+            "mb-8 ml-auto mr-auto",
+            "w-[350px]",
+            "min-[1300px]:w-[550px]"
+          )}
+        >
+          <div
+            className={cn(
+              "bg-identidade bg-cover rounded-3xl z-10 relative",
+              "h-[300px] w-[300px]",
+              "min-[1300px]:h-[500px] min-[1300px]:w-[500px]"
+            )}
+          ></div>
+          <div
+            className={cn(
+              "border-2 border-red-600 rounded-3xl relative",
+              "h-[300px] w-[300px] -mt-[250px] ml-[50px]",
+              "min-[1300px]:h-[500px] min-[1300px]:w-[500px] min-[1300px]:-mt-[450px] min-[1300px]:ml-[50px]"
+            )}
+          ></div>
           <img
             src={logo}
             alt="logo"
-            className="bg-yellow-400 rounded-3xl shadow-2xl h-[150px] relative -mt-[150px] ml-[320px] animate-float z-10"
+            className={cn(
+              "bg-yellow-400 rounded-3xl shadow-2xl relative animate-float z-10",
+              "h-[100px] -mt-[100px] ml-[200px]",
+              "min-[1300px]:h-[150px] min-[1300px]:-mt-[150px] min-[1300px]:ml-[320px]"
+            )}
           />
         </div>
         <div className="mb-8">
